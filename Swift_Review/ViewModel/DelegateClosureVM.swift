@@ -10,7 +10,7 @@ import UIKit
 
 struct DelegateClosureModel {
     
-    
+    var didChangeBackgroundColorClosure :(UIColor) -> () = {_ in }
     
     func genRandomColor() -> UIColor{
       

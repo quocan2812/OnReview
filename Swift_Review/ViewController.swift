@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         let vc = storyboard.instantiateViewController(withIdentifier: "DelegateClosureViewControllerId") as! DelegateClosureViewController
         self.present(vc, animated: true)
         
-        vc.didChangeBackgroundColorClosure = { (color : UIColor) -> () in
+        vc.delegateClosureModel.didChangeBackgroundColorClosure = { (color : UIColor) -> () in
             self.view.backgroundColor = color
         }
         

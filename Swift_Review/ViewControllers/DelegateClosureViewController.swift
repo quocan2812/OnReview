@@ -9,17 +9,10 @@ import UIKit
 
 class DelegateClosureViewController: UIViewController {
     
-    var delegateClosureModel : DelegateClosureModel?
-    
-    var didChangeBackgroundColorClosure :(UIColor) -> () = {_ in }
+    var delegateClosureModel : DelegateClosureModel = DelegateClosureModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.delegateClosureModel = DelegateClosureModel()
-        
-        
-        
         
 
         // Do any additional setup after loading the view.
@@ -38,11 +31,11 @@ class DelegateClosureViewController: UIViewController {
 
     @IBAction func onTouchButton(_ sender: UIButton) {
         
-        let color = self.delegateClosureModel?.genRandomColor()
+        let color = self.delegateClosureModel.genRandomColor()
         
-      //  self.view.backgroundColor = color
+        self.view.backgroundColor = color
         
-        self.didChangeBackgroundColorClosure(color!)
+        self.delegateClosureModel.didChangeBackgroundColorClosure(color)
         
         
         
