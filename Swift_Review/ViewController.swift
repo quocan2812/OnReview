@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         
         // Do any additional setup after loading the view.
         
@@ -27,6 +27,20 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func onTouchButton(_ sender: UIButton) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DelegateClosureViewControllerId") as! DelegateClosureViewController
+        self.present(vc, animated: true)
+        
+        vc.didChangeBackgroundColorClosure = { (color : UIColor) -> () in
+            self.view.backgroundColor = color
+        }
+        
+        
+          
+    }
+    
 }
+
 
