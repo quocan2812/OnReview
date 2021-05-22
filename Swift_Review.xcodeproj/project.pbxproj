@@ -52,6 +52,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0037DFCF2658B76B003EF3CF /* WillSetAndDidSet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WillSetAndDidSet;
+			sourceTree = "<group>";
+		};
 		00D4A8AA265649F400E603E8 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +80,7 @@
 		00D4A8B5265649F400E603E8 /* Swift_Review */ = {
 			isa = PBXGroup;
 			children = (
+				0037DFCF2658B76B003EF3CF /* WillSetAndDidSet */,
 				00D4A8B6265649F400E603E8 /* AppDelegate.swift */,
 				00D4A8B8265649F400E603E8 /* SceneDelegate.swift */,
 				00D4A8BA265649F400E603E8 /* ViewController.swift */,
