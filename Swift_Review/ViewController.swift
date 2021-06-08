@@ -27,12 +27,7 @@ class ViewController: UIViewController {
         self.mainViewModel.disSetValuePlayGirl = {(numberPlayGirl : Int) -> () in
             self.inputTextField.text = "\(numberPlayGirl)"
         }
-        
-        
-        
-        
 
-        
         // Do any additional setup after loading the view.
         
     }
