@@ -13,18 +13,18 @@ class HackerankViewController: UIViewController {
         super.viewDidLoad()
         var arr = [[Int]]()
         
-        arr.append([1, 1, 1, 0, 0, 0])
-        arr.append([0, 1, 0, 0, 0, 0])
-        arr.append([1, 1, 1, 0, 0, 0])
-        arr.append([0, 0, 2, 4, 4, 0])
-        arr.append([0, 0, 0, 2, 0, 0])
-        arr.append([0, 0, 1, 2, 4, 0])
+//        arr.append([1, 1, 1, 0, 0, 0])
+//        arr.append([0, 1, 0, 0, 0, 0])
+//        arr.append([1, 1, 1, 0, 0, 0])
+//        arr.append([0, 0, 2, 4, 4, 0])
+//        arr.append([0, 0, 0, 2, 0, 0])
+//        arr.append([0, 0, 1, 2, 4, 0])
         
-        let maxSum = solveHackerandArray(inputArr: arr)
+      //  let maxSum = solveHackerandArray(inputArr: arr)
         
-        print(maxSum)
+      //  print(maxSum)
         
-        let a = readInteger()
+      //  let a = readInteger()
         
         
         
